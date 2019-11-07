@@ -60,6 +60,7 @@ def wx(request):
             if msg.event == 'subscribe':
                 reply = wechatpy.replies.TextReply(content='欢迎订阅，祝您一路顺风！', message=msg)
             else:
+                print('您慢走，欢迎再来。')
                 reply = wechatpy.replies.TextReply(content='欢迎订阅，祝您一路顺风！', message=msg)
         else:
             reply = wechatpy.replies.TextReply(content='其他类型', message=msg)
