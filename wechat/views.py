@@ -111,4 +111,4 @@ def wx(request):
     else:
         print(wechatpy.parse_message(request.body))
         print('===========================')
-        return HttpResponse('Thanks')
+        return HttpResponse('Thanks！')
